@@ -8,8 +8,8 @@ root.resizable(False, False)  # can't rescale the window
 root.configure(bg="#141527")  # set dark background color
 
 # Dimensions for the Window
-w = 500
-h = 800
+w = 450
+h = 700
 
 # Code to get coordinates to place window at center
 ws = root.winfo_screenwidth()
@@ -23,7 +23,7 @@ root.geometry("%dx%d+%d+%d" % (w, h, x, y))  # place the window 'root'
 def Test():
     def run_speed_test():
 
-        Download.config(text = "Loading")
+        Download.config(text="Loading")
 
         test = speedtest.Speedtest()
         servernames = []
@@ -85,7 +85,7 @@ Test_Button = Button(
     cursor="hand2",
     command=Check,
 )
-Test_Button.place(x=148, y=580)
+Test_Button.place(x=125, y=510)
 
 Reset_Image = PhotoImage(file="./images/reset.png")
 Reset_Button = Button(
@@ -97,27 +97,28 @@ Reset_Button = Button(
     cursor="hand2",
     command=Reset,
 )
-Reset_Button.place(x=215, y=665)
+Reset_Button.place(x=190, y=600)
 
 
 # Labels to show values
 ping = Label(root, text="--", font="arial 20", bg="#141527", fg="#e9b342")
-ping.place(x=110, y=240, anchor="center")
+ping.place(x=100, y=215, anchor="center")
 
 download = Label(root, text="--", font="arial 20", bg="#141527", fg="#0cf107")
-download.place(x=250, y=240, anchor="center")
+download.place(x=225, y=215, anchor="center")
 
 upload = Label(root, text="--", font="arial 20", bg="#141527", fg="#e61c25")
-upload.place(x=390, y=240, anchor="center")
+upload.place(x=350, y=215, anchor="center")
 
 Download = Label(root, text="--", font="arial 30", bg="#141527", fg="#00FFFF")
-Download.place(x=250, y=480, anchor="center")
+Download.place(x=225, y=430, anchor="center")
 
 service = Label(root, text="- - -", font="arial 12", bg="#141527", fg="white")
-service.place(x=65, y=670, anchor="center")
+service.place(x=55, y=590, anchor="center")
 
-ip = Label(root, text="- - - - - - - -", font="arial 12", bg="#141527", fg="white")
-ip.place(x=425, y=670, anchor="center")
+ip = Label(root, text="- - - - - - - -",
+           font="arial 12", bg="#141527", fg="white")
+ip.place(x=380, y=590, anchor="center")
 
 
 root.mainloop()
