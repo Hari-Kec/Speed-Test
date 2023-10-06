@@ -20,6 +20,7 @@ The Internet Speed Test Python application allows you to check your internet con
 ## Features
 
 - Measure your ping, download, and upload speeds.
+- Check your service provider and ip address.
 - Easy-to-use interface for quick speed checks.
 
 ## Getting Started
@@ -85,5 +86,3 @@ pip install speedtest-cli
 Contributions to this project are welcome. If you have any suggestions, enhancements, or bug fixes, please open an issue or submit a pull request.
 
 **Note:** This project is for educational and demonstration purposes. Results may vary based on your internet connection and network conditions.
-
-Feel free to use this template for your projects.
